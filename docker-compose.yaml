@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:14.11
+    container_name: cobaia_banco
+    environment:
+      POSTGRES_DB: cobaia
+      POSTGRES_USER: cobaia_user
+      POSTGRES_PASSWORD: cobaia_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+
