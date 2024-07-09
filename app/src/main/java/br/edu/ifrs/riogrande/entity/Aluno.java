@@ -2,18 +2,10 @@ package br.edu.ifrs.riogrande.entity;
 
 import java.time.LocalDate;
 
-import br.edu.ifrs.riogrande.Campo;
-import br.edu.ifrs.riogrande.Comprimento;
-
-
-// @Tabela(nome="tbl_alunos")
 public class Aluno extends Usuario {
 
-  @Comprimento(11)
-  private String cpf; // metadado
+  private String cpf;
 
-  @Campo(comprimento = 100)
-  // @Comprimento(50)
   private String matricula; // VARCHAR(500)
   // private String nomePai;
   private LocalDate dataIngresso;
