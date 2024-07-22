@@ -1,9 +1,9 @@
-version: '3'
+version: '3.8'
 
 services:
-  postgres:
+  db:
     image: postgres:14.11
-    container_name: cobaia_banco
+    container_name: postgresdb
     environment:
       POSTGRES_DB: cobaia
       POSTGRES_USER: cobaia_user
@@ -13,3 +13,5 @@ services:
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
 
+volumes:
+  postgres-data:
