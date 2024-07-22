@@ -1,5 +1,9 @@
 package br.edu.ifrs.riogrande.entity;
 
+// ORM: Object-Relational Mapping
+// Mapamento Objeto-Relacional (SQL)
+// O?M, ODM: Object-Document Mapping
+
 public abstract class Usuario {
 
   private String email;

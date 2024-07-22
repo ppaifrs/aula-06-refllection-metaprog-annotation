@@ -2,7 +2,7 @@ package br.edu.ifrs.riogrande.entity;
 
 public class Produto {
     
-    @Coluna("id") // configuração
+    // @Coluna("id") // configuração
     private int codigo; // convenção
 
     private String descricao;
